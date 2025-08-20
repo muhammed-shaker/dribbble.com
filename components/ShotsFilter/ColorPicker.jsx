@@ -43,7 +43,7 @@ export default function ColorPicker() {
             </div>
             <div className="flex items-center gap-1 border-[1.5px]  border-gray-300 rounded-lg px-4 filter-input mt-4">
                 {
-                    true ?
+                    inputValue ?
                         (
                             <div style={{ backgroundColor: `#${inputValue}` }} className="size-5 min-w-5 rounded-full flex justify-center items-center">
                                 <div className="size-2 rounded-full bg-white"></div>
