@@ -51,7 +51,32 @@
   }
 }
 
+.animate-slide{
+  animation: slide 20s infinite linear;
+}
+
+
+
+
+@keyframes slide {
+  from{
+    translate: 0;
+  }
+  to{
+    translate: -100%;
+  }
+}
+
+
+.pause-animation{
+  animation-play-state: paused;
+}
+
+
 .filter-input:has(input:focus){
   border: 1.5px solid rgba(234,100,217,0.4);
   outline: 4px solid rgba(234,100,217,0.1);
 }
+
+
+
