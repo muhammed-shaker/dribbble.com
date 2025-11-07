@@ -1,12 +1,14 @@
+import FooterCategories from "@/components/FooterCategories";
 import ShotsFilter from "@/components/ShotsFilter";
 import { FilterContextProvider } from "@/contexts/ShotsFilterContext";
 
 export default  function Page(){
     return (
         <>
-           <FilterContextProvider>
+            <FilterContextProvider>
                 <ShotsFilter />
-           </FilterContextProvider>
+            </FilterContextProvider>
         </>
     )
 }
+

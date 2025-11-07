@@ -1,6 +1,7 @@
 import { Roboto, Source_Sans_3} from 'next/font/google'
 import Header from '@/components/Header'
 import './index.css'
+import { Footer } from '@/components/Footer';
 
 
 const sourceSerif = Source_Sans_3({
@@ -20,10 +21,11 @@ const roboto = Roboto({
 
 export default function Layout({children}){
     return(
-        <html>
+        <html lang='en' dir='ltr'>
             <body className={sourceSerif.className}>
                 <Header />
-                {children}
+                <main>{children}</main>
+                <Footer />
             </body>
         </html>
     )
