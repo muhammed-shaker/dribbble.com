@@ -1,7 +1,9 @@
 import HeroAnimations from '@/components/HeroAnimationsSection'
 import SearchForm from '@/components/searchForm'
+import { Shot } from '@/components/Shot'
 import ShotsFilter from '@/components/ShotsFilter'
 import { FilterContextProvider } from '@/contexts/ShotsFilterContext'
+import { shots } from '@/data/shots'
 
 
 export default function Page(){
@@ -19,6 +21,10 @@ export default function Page(){
            <FilterContextProvider>
                 <ShotsFilter />
            </FilterContextProvider>
+
+           <section className="grid grid-cols-3 gap-11">
+                {Array(4).fill(shots).flat().map((shot, index) => <Shot {...shot} key={`${shot.title}-${index}`} />)}
+           </section>
         </div>
     )
 }
