@@ -55,6 +55,13 @@
   animation: slide 20s infinite linear;
 }
 
+.footer-categories-animation:hover .animate-slide{
+
+  animation-play-state: paused;
+}
+
+
+
 
 
 
@@ -78,5 +85,9 @@
   outline: 4px solid rgba(234,100,217,0.1);
 }
 
+
+.overly-bg{
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.150));
+}
 
 
