@@ -37,7 +37,7 @@ export default function Header(){
     }
     
     return(
-        <header className={`p-4 relative bg-white ${showForm ? 'sticky top-0 left-0 right-0 animate-fadein py-2' : ''}`}>
+        <header className={`p-4 relative bg-white z-50 ${showForm ? 'sticky top-0 left-0 right-0 animate-fadein py-2' : ''}`}>
            <div className="max-w-7xl mx-auto px-4 flex items-center gap-8">
 
                 <div className="flex items-center gap-4">
