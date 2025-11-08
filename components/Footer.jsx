@@ -1,8 +1,7 @@
-import Link from "next/link";
-import FooterCategories from "./FooterCategories";
-import Logo from "./Logo";
-import { Facebook, Instagram, Twitter } from "lucide-react";
-import Image from "next/image";
+import Link from 'next/link'
+import FooterCategories from './FooterCategories'
+;import Logo from './Logo'
+import Image from 'next/image'
 
 export function Footer(){
     return (

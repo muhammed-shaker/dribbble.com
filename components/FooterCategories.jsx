@@ -1,12 +1,10 @@
-'use client'
-
 import categories from '@/data/categories'
 import Link from 'next/link'
 
 export default function FooterCategories(){
 
     return (
-        <div className="flex items-center flex-nowrap min-h-37.5 my-12 overflow-x-hidden">
+        <div className="footer-categories-animation flex items-center flex-nowrap min-h-37.5 my-12 overflow-x-hidden">
             <div className="flex flex-nowrap animate-slide py-6">
                 {categories.map(category =>(
 
